@@ -1,7 +1,7 @@
 # IntentFX
 This project is about how to achieve screen changing(multiple scene in a single stage). Intent class help us to achieve this goal.
 # How to use:
-Constructor:
+Constructors:
 ```java
 //here fxmlLocationFromSrc is the location of your fxml file from your src folder
 public Intent(Stage stage, String fxmlLocationFromSrc)
@@ -50,7 +50,8 @@ In scene doesn't exist creates a new scene and add it to the stage.
 License
 --------
 
-    Copyright 2013 Square, Inc.
+    Copyright (c) 2020. Hasan Masum
+    github: https://github.com/Hmasum18
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
