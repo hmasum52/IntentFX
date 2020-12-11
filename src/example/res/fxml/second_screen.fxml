@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00ff00;"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="example.main.SecondScreenController">
+    <children>
+        <Label layoutX="150.0" layoutY="97.0" text="Screen two: Welcome" AnchorPane.leftAnchor="150.0"
+               AnchorPane.rightAnchor="150.0">
+            <font>
+                <Font name="Droid Sans" size="30.0"/>
+            </font>
+        </Label>
+        <Button fx:id="mBackBtn" layoutX="35.0" layoutY="339.0" mnemonicParsing="false" text="Back"
+                AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+            <font>
+                <Font name="System Bold" size="18.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

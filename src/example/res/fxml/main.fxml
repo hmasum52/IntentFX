@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane focusTraversable="true" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="example.main.FirstSreenController">
+    <children>
+        <Label fx:id="mCounterLBL" layoutX="269.0" layoutY="111.0" text="0">
+            <font>
+                <Font name="SansSerif Bold" size="54.0"/>
+            </font>
+        </Label>
+        <Button fx:id="mPlusBtn" layoutX="307.0" layoutY="200.0" mnemonicParsing="false" prefHeight="57.0"
+                prefWidth="77.0" text="Plus" AnchorPane.bottomAnchor="142.39999999999998" AnchorPane.leftAnchor="307.0"
+                AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="200.0"/>
+        <Button fx:id="mMinusBtn" layoutX="172.0" layoutY="200.0" mnemonicParsing="false" prefHeight="58.0"
+                prefWidth="92.0" text="Minus" AnchorPane.bottomAnchor="142.39999999999998" AnchorPane.leftAnchor="172.0"
+                AnchorPane.rightAnchor="336.0" AnchorPane.topAnchor="200.0"/>
+        <Button fx:id="mChangeSceneBtn" layoutX="465.0" layoutY="332.0" mnemonicParsing="false" text="Change screen"
+                AnchorPane.bottomAnchor="42.4" AnchorPane.leftAnchor="465.0"
+                AnchorPane.rightAnchor="40.599999999999994"/>
+        <Label fx:id="mCounterLBL1" layoutX="153.0" layoutY="29.0" text="Screen one">
+            <font>
+                <Font name="SansSerif Bold" size="54.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
