@@ -14,15 +14,15 @@ Though there are many ways to achieve this goal in JavaFX, this project is about
 
 **Step - 1: Make a res folder and make a fxml sub-folder in the src folder **
 
-![image-20201214144544549](readMeResourse\image-20201214144544549.png)
+![image-20201214144544549](readMeResourse\creating_res_folder.png)
 
 **Step-2: Main a R class in the res folder**
 
-![image-20201214144712819](readMeResourse\image-20201214144712819.png)
+![image-20201214144712819](readMeResourse\creating_R_class.png)
 
 **Step-3: Make FXML class in fxml folder and put all your fxml file in it**
 
-![image-20201214144827738](readMeResourse\image-20201214144827738.png)
+![image-20201214144827738](readMeResourse\creating_FXML_class.png)
 
 **Step-4: Create a getURLByName() method[You can give your own name]**
 
