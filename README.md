@@ -1,6 +1,3 @@
----
-typora-copy-images-to: readMeResourse
----
 
 # IntentFX
 Adding multiple screen in your app add a great user experience in an app. Though navigation from one screen to anther screen can achieved so easily, it is quit difficult to do the same in JavaFX.
@@ -14,15 +11,15 @@ Though there are many ways to achieve this goal in JavaFX, this project is about
 
 **Step - 1: Make a res folder and make a fxml sub-folder in the src folder **
 
-![image-20201214144544549](readMeResourse\creating_res_folder.png)
+![creating_res_folder](readMeResourse/creating_res_folder.png)
 
 **Step-2: Main a R class in the res folder**
 
-![image-20201214144712819](readMeResourse\creating_R_class.png)
+![creating_R_class](readMeResourse/creating_R_class.png)
 
 **Step-3: Make FXML class in fxml folder and put all your fxml file in it**
 
-![image-20201214144827738](readMeResourse\creating_FXML_class.png)
+![creating_FXML_class](readMeResourse/creating_FXML_class.png)
 
 **Step-4: Create a getURLByName() method[You can give your own name]**
 
