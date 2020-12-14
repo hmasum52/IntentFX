@@ -1,21 +1,14 @@
 /*
- * Copyright (c) 2020. Hasan Masum
- * github: https://github.com/Hmasum18
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
+ * Copyright (c) $today.year.Hasan Masum
+ * Email : connectwithmasum@gmail.com
+ *  Github: https://github.com/Hmasum18
+ *  You can copy the code but please give due credit to the author
+ * This code is under MIT LICENSE
  */
 
 package github.hmasum18.intentFX;
 
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 import java.util.HashMap;
@@ -23,13 +16,14 @@ import java.util.HashMap;
 public class SceneManager {
     public static SceneManager instance;
     //fxml src address and its scene
-    private HashMap<String,Scene> sceneHashMap;
-    private String lastSceneFxmlUrl;
+    private final HashMap<String, Scene> sceneHashMap;
+    private final HashMap<String, Parent> parentHashMap;
     private String currentSceneFxmlUrl;
 
 
     private SceneManager(){
         sceneHashMap = new HashMap<>();
+        parentHashMap = new HashMap<>();
     }
 
     public static SceneManager getInstance() {
@@ -55,14 +49,6 @@ public class SceneManager {
         return sceneHashMap.get(fxmlUrl)!=null;
     }
 
-    public String getLastSceneFxmlUrl() {
-        return lastSceneFxmlUrl;
-    }
-
-    public void setLastSceneFxmlUrl(String lastSceneFxmlUrl) {
-        this.lastSceneFxmlUrl = lastSceneFxmlUrl;
-    }
-
     public String getCurrentSceneFxmlUrl() {
         return currentSceneFxmlUrl;
     }
@@ -70,4 +56,27 @@ public class SceneManager {
     public void setCurrentSceneFxmlUrl(String currentSceneFxmlUrl) {
         this.currentSceneFxmlUrl = currentSceneFxmlUrl;
     }
+
+    public Scene getCurrentScene(){
+        return sceneHashMap.get(currentSceneFxmlUrl);
+    }
+
+
+    public void addParent(String fxmlUrl, Parent parent){
+        parentHashMap.put(fxmlUrl,parent);
+    }
+
+    public void removeParent(String fxmlUrl){
+        if(isSceneAlive(fxmlUrl))
+            parentHashMap.remove(fxmlUrl);
+    }
+
+    public Parent getParent(String fxmlUrl){
+        return parentHashMap.get(fxmlUrl);
+    }
+
+    public Parent getCurrentParent(){
+        return parentHashMap.get(currentSceneFxmlUrl);
+    }
+
 }
