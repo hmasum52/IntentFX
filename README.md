@@ -47,7 +47,7 @@ Ok now you are ready to use IntentFX class.
 
 ### *How to use IntentFX class*:
 
-Here I will describe the [example](src/example) that I made to describe how to use IntentFX. Please take a look at the [fxml](src\example\res\fxml) files.
+Here I will describe the [example](src/example) that I made to describe how to use IntentFX. Please take a look at the [fxml](src/example/res/fxml) files.
 
 **Step-1: Creating Main class**
 
